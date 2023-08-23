@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b90b077-6228-45b8-b6c5-28e577989932" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/System/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/System/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/logo.png" afterDir="false" />
+    <list default="true" id="6b90b077-6228-45b8-b6c5-28e577989932" name="Changes" comment="Login page with &quot;clear&quot; button functionality">
+      <change afterPath="$PROJECT_DIR$/src/main/java/System/Signup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/System/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/System/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +59,20 @@
       <recent name="C:\Users\Administrator\Desktop\Banking System\src\main\java\System\res" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Signup">
+    <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="System.Login" />
+      <module name="BankingSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="System.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="System.Main" />
       <module name="BankingSystem" />
@@ -78,8 +86,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Signup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="System.Signup" />
+      <module name="BankingSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="System.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Signup" />
+        <item itemvalue="Application.Login" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -94,12 +117,26 @@
       <updated>1692348984437</updated>
       <workItem from="1692348985454" duration="7434000" />
       <workItem from="1692546884538" duration="631000" />
-      <workItem from="1692606412553" duration="2337000" />
+      <workItem from="1692606412553" duration="10710000" />
+      <workItem from="1692698222174" duration="1053000" />
+      <workItem from="1692778628700" duration="3467000" />
     </task>
+    <task id="LOCAL-00001" summary="Login page with &quot;clear&quot; button functionality">
+      <created>1692616835943</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1692616835943</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Login page with &quot;clear&quot; button functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login page with &quot;clear&quot; button functionality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
