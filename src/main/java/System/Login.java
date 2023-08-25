@@ -10,6 +10,8 @@ public class Login extends JFrame implements ActionListener {
     JButton login, clear, signup;
     JTextField cardTextField, pinTextField;
 
+    JLabel label, text, cardNum, pin;
+
     Login(){
         setTitle("Login window");
 
@@ -19,16 +21,16 @@ public class Login extends JFrame implements ActionListener {
         Image imgIc2 = imgIc.getImage().getScaledInstance(100, 100 , Image.SCALE_DEFAULT);
         ImageIcon imgIc3 = new ImageIcon(imgIc2);
 
-        JLabel label = new JLabel(imgIc3);
+        label = new JLabel(imgIc3);
         label.setBounds(70,10, 100, 120);
         add(label);
 
-        JLabel text = new JLabel("Welcome to ATM");
+        text = new JLabel("Welcome to ATM");
         text.setFont(new Font("Calibri",Font.BOLD, 40));
         text.setBounds(260, 60, 400, 40);
         add(text);
 
-        JLabel cardNum = new JLabel("Card Num :");
+        cardNum = new JLabel("Card Num :");
         cardNum.setFont(new Font("Calibri",Font.BOLD, 30));
         cardNum.setBounds(100, 180, 400, 40);
         add(cardNum);
@@ -37,7 +39,7 @@ public class Login extends JFrame implements ActionListener {
         cardTextField.setBounds(280, 180, 250, 30);
         add(cardTextField);
 
-        JLabel pin = new JLabel("PIN :");
+        pin = new JLabel("PIN :");
         pin.setFont(new Font("Calibri",Font.BOLD, 30));
         pin.setBounds(100, 250, 400, 40);
         add(pin);
@@ -77,17 +79,22 @@ public class Login extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent ae) {
-        if(ae.getSource() == login){
-
-        }
-        else  if (ae.getSource() == clear){
+        if(ae.getSource() == clear){
             cardTextField.setText("");
             pinTextField.setText("");
+        }
+        else  if (ae.getSource() == login){
+
         }
         else  if (ae.getSource() == signup){
 
         }
 
+    }
+
+    public static void main(String[] args) {
+
+        new Login();
     }
 }
 
