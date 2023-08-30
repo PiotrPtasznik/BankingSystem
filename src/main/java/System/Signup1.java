@@ -6,19 +6,18 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.Connection;
 import java.util.*;
 
-public class Signup extends JFrame implements ActionListener {
+public class Signup1 extends JFrame implements ActionListener {
 
-    long random;
+    public long random;
      JTextField nameTextField, surNameTextField, emailTextField, addressTextField, cityTextField, stateTextField, pinCodeTextField ;
      JLabel fromNum, personDetails, name, surName, birthDate, gender, email, marital, address, city, state, pinCode;
      JRadioButton male, female,  married, unmarried, other;
      JDateChooser  dateChooser;
 
     JButton next;
-    Signup(){
+    Signup1(){
         setLayout(null);
 
         Random rand = new Random();
@@ -216,6 +215,9 @@ public class Signup extends JFrame implements ActionListener {
                 String query = "Insert into signup values('"+formNum+"', '"+name+"', '"+surName+"','"+dob+"','"+gender+"','"+email+"','"+marital+"','"+address+"','"+city+"','"+state+"','"+pincode+"')";
                System.out.println(query);
                 c.s.executeUpdate(query);
+
+                setVisible(false);
+                new Signup2(formNum).setVisible(true);
             }
         }
         catch (Exception ex){
@@ -226,6 +228,6 @@ public class Signup extends JFrame implements ActionListener {
 
 
     public static void main(String[] args) {
-        new Signup();
+        new Signup1();
     }
 }
