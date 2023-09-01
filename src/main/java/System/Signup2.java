@@ -1,20 +1,17 @@
 package System;
 
-import com.toedter.calendar.JDateChooser;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Random;
 
 public class Signup2 extends JFrame implements ActionListener {
 
     long random;
-    JTextField phoneNumberTextField, occupationTextField, drivingLicenseNumberTextField;
+    JTextField phoneNumberTextField, occupationTextField;
     JLabel additionalDetails, phoneNumber, education, insurance, income, employment, occupation, retirement, drivingLicense, drivingLicenseNumber;
     JRadioButton insured, uninsured, employed, unemployed, retired, unretired , drivingLicenseY , drivingLicenseN;
-    JButton next;
+    JButton nextBtn;
     JComboBox educationCBox, incomeCBox, drivingLicenseCBox;
     String formNum;
 
@@ -42,7 +39,7 @@ public class Signup2 extends JFrame implements ActionListener {
         education.setFont(new Font("Calibri", Font.BOLD, 18));
         add(education);
 
-        String[] educationValues = {"------------", "Uneducated", "Primary", "Secondary", "High School", "Associate's Degree", "Bachelor's Degree", "Master's Degree", "Doctoral Degree"};
+        String[] educationValues = {"--", "Uneducated", "Primary", "Secondary", "High School", "Associate's Degree", "Bachelor's Degree", "Master's Degree", "Doctoral Degree"};
         educationCBox = new JComboBox<>(educationValues);
         educationCBox.setBounds(400,160,200,30);
         educationCBox.setFont(new Font("Calibri", Font.BOLD, 18));
@@ -76,7 +73,7 @@ public class Signup2 extends JFrame implements ActionListener {
         income.setFont(new Font("Calibri", Font.BOLD, 18));
         add(income);
 
-        String[] incomeValues = {"------------", "Less than 1000$", "1000-2000$", "2000-5000$", "5000-10 000$", "Over 10 000$"};
+        String[] incomeValues = {"--", "Less than 1000$", "1000-2000$", "2000-5000$", "5000-10 000$", "Over 10 000$"};
         incomeCBox = new JComboBox<>(incomeValues);
         incomeCBox.setBounds(400,240,200,30);
         incomeCBox.setFont(new Font("Calibri", Font.BOLD, 18));
@@ -161,19 +158,19 @@ public class Signup2 extends JFrame implements ActionListener {
         drivingLicenseNumber.setFont(new Font("Calibri", Font.BOLD, 18));
         add(drivingLicenseNumber);
 
-        String[] drivingLicenseValues = {"------------", "AM", "A1", "A2", "A", "B", "Other", "None"};
+        String[] drivingLicenseValues = {"--", "AM", "A1", "A2", "A", "B", "Other", "None"};
         drivingLicenseCBox = new JComboBox<>(drivingLicenseValues);
         drivingLicenseCBox.setBounds(400,440,200,30);
         drivingLicenseCBox.setFont(new Font("Calibri", Font.BOLD, 18));
         drivingLicenseCBox.setBackground(Color.white);
         add(drivingLicenseCBox);
         
-        next = new JButton("Next");
-        next.setBounds(720, 480, 80, 30);
-        next.setBackground(Color.BLACK);
-        next.setForeground(Color.white);
-        next.addActionListener(this);
-        add(next);
+        nextBtn = new JButton("Next");
+        nextBtn.setBounds(720, 480, 80, 30);
+        nextBtn.setBackground(Color.BLACK);
+        nextBtn.setForeground(Color.white);
+        nextBtn.addActionListener(this);
+        add(nextBtn);
 
 
         getContentPane().setBackground(Color.white);
@@ -181,9 +178,6 @@ public class Signup2 extends JFrame implements ActionListener {
         setSize(850,800);
         setLocation(350,10);
         setVisible(true);
-
-        System.out.println(formNum);
-
     }
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -233,7 +227,8 @@ public class Signup2 extends JFrame implements ActionListener {
             String query = "Insert into signup2 values('"+formNum+"', '"+phone+"', '"+education+"','"+insurance+"','"+income+"','"+employment+"','"+occupation+"','"+pensioner+"','"+drivingLicense+"','"+drivingLicenseValues+"')";
             c.s.executeUpdate(query);
 
-            System.out.println(query);
+            setVisible(false);
+            new Signup3(formNum).setVisible(true);
 
         }
         catch (Exception ex){

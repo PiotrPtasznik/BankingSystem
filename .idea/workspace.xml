@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b90b077-6228-45b8-b6c5-28e577989932" name="Changes" comment="Database connectivity, refractoring">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/System/Signup2.java" afterDir="false" />
+    <list default="true" id="6b90b077-6228-45b8-b6c5-28e577989932" name="Changes" comment="Signup second form">
+      <change afterPath="$PROJECT_DIR$/src/main/java/System/Signup3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/System/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/System/Signup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Signup1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/System/Signup2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Signup2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="update(BankingSystem)_v1.01" />
+        <entry key="$PROJECT_DIR$" value="update(BankingSystem)_v1.02" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -139,7 +139,10 @@
       <workItem from="1693038602610" duration="2209000" />
       <workItem from="1693137862893" duration="6576000" />
       <workItem from="1693390031553" duration="1477000" />
-      <workItem from="1693408768178" duration="7580000" />
+      <workItem from="1693408768178" duration="11385000" />
+      <workItem from="1693500271085" duration="8948000" />
+      <workItem from="1693560061400" duration="713000" />
+      <workItem from="1693583826506" duration="1025000" />
     </task>
     <task id="LOCAL-00001" summary="Login page with &quot;clear&quot; button functionality">
       <created>1692616835943</created>
@@ -162,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692976953138</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Signup second form">
+      <created>1693416784096</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693416784096</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +182,8 @@
     <MESSAGE value="Login page with &quot;clear&quot; button functionality" />
     <MESSAGE value="SignUp page" />
     <MESSAGE value="Database connectivity, refractoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database connectivity, refractoring" />
+    <MESSAGE value="Signup second form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Signup second form" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
