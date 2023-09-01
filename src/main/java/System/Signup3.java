@@ -74,6 +74,7 @@ public class Signup3 extends JFrame implements ActionListener {
         submitBtn.setBackground(Color.BLACK);
         submitBtn.setForeground(Color.WHITE);
         submitBtn.setBounds(250,720,100,30);
+        submitBtn.addActionListener(this);
         add(submitBtn);
 
         cancelBtn = new JButton("Cancel");
@@ -81,7 +82,9 @@ public class Signup3 extends JFrame implements ActionListener {
         cancelBtn.setBackground(Color.BLACK);
         cancelBtn.setForeground(Color.WHITE);
         cancelBtn.setBounds(420,720,100,30);
+        cancelBtn.addActionListener(this);
         add(cancelBtn);
+
 
 
         serviceCBox1 = new JCheckBox("ATM CARD");
@@ -163,8 +166,8 @@ public class Signup3 extends JFrame implements ActionListener {
         setLocation(500,120);
         setVisible(true);
 
-        submitBtn.addActionListener(this);
-        cancelBtn.addActionListener(this);
+
+
     }
 
     @Override
@@ -216,9 +219,11 @@ public class Signup3 extends JFrame implements ActionListener {
                     if(accountType.equals("")){
                         JOptionPane.showMessageDialog(null, "Fill all the required fields");
                     }else{
-                        Connector c1 = new Connector();
+                        Connector connector = new Connector();
                         String q1 = "insert into signup3 values('"+formNum+"','"+accountType+"','"+cardNum+"','"+pin+"','"+service+"')";
-                        c1.s.executeUpdate(q1);
+                        String q2 = "insert into login values('"+formNum+"', '"+cardNum+"', '"+pin+"')";
+                        connector.s.executeUpdate(q1);
+                        connector.s.executeUpdate(q2);
                         JOptionPane.showMessageDialog(null, "Card Number: " + cardNum + "\n Pin:"+ pin);
                     }
                 }

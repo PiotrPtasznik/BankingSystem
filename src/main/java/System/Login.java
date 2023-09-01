@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
 
 public class Login extends JFrame implements ActionListener {
 
@@ -84,7 +85,24 @@ public class Login extends JFrame implements ActionListener {
             pinTextField.setText("");
         }
         else  if (ae.getSource() == login){
-
+            Connector connector = new Connector();
+            String cardnumber = cardTextField.getText();
+            String pinnumber = pinTextField.getText();
+            String query = "select from login where cardnumber = '"+cardnumber+"' and pinnumber = '"+pinnumber+"'";
+            try {
+                ResultSet rs = connector.s.executeQuery(query);
+                if(rs.next()){
+                    setVisible(false);
+                    //banking operations
+                    System.out.println("jests w bankomacie");
+                }
+                else {
+                    JOptionPane.showMessageDialog(null, "Incorrect cadnumber or pin values");
+                }
+            }
+            catch (Exception e){
+                System.out.println(e);
+            }
         }
         else  if (ae.getSource() == signup){
             setVisible(false);
