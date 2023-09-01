@@ -89,7 +89,6 @@ public class Login extends JFrame implements ActionListener {
         else  if (ae.getSource() == signup){
 
         }
-
     }
 
     public static void main(String[] args) {

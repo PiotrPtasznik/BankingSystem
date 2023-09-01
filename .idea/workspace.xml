@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b90b077-6228-45b8-b6c5-28e577989932" name="Changes" comment="SignUp page">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/System/Connector.java" afterDir="false" />
+    <list default="true" id="6b90b077-6228-45b8-b6c5-28e577989932" name="Changes" comment="Database connectivity, refractoring">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/System/Signup2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/System/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/System/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/System/Signup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Signup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/System/Signup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Signup1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +71,7 @@
       <recent name="C:\Users\Administrator\Desktop\Banking System\src\main\java\System\res" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Signup">
+  <component name="RunManager">
     <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="System.Login" />
       <module name="BankingSystem" />
@@ -102,8 +98,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Signup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="System.Signup" />
+    <configuration name="Signup1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="System.Signup1" />
       <module name="BankingSystem" />
       <extension name="coverage">
         <pattern>
@@ -117,8 +113,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Signup" />
         <item itemvalue="Application.Login" />
+        <item itemvalue="Application.Signup1" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -138,7 +134,12 @@
       <workItem from="1692778628700" duration="4231000" />
       <workItem from="1692889508920" duration="1475000" />
       <workItem from="1692891423611" duration="5133000" />
-      <workItem from="1692951237327" duration="11326000" />
+      <workItem from="1692951237327" duration="11694000" />
+      <workItem from="1692992144683" duration="652000" />
+      <workItem from="1693038602610" duration="2209000" />
+      <workItem from="1693137862893" duration="6576000" />
+      <workItem from="1693390031553" duration="1477000" />
+      <workItem from="1693408768178" duration="7580000" />
     </task>
     <task id="LOCAL-00001" summary="Login page with &quot;clear&quot; button functionality">
       <created>1692616835943</created>
@@ -154,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692789989776</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Database connectivity, refractoring">
+      <created>1692976953138</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692976953138</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +171,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Login page with &quot;clear&quot; button functionality" />
     <MESSAGE value="SignUp page" />
-    <option name="LAST_COMMIT_MESSAGE" value="SignUp page" />
+    <MESSAGE value="Database connectivity, refractoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Database connectivity, refractoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
