@@ -15,7 +15,6 @@ public class Signup3 extends JFrame implements ActionListener {
     String formNum;
 
     Signup3(String formNum){
-        setLayout(null);
         this.formNum = formNum;
 
         label1 = new JLabel("Page 3: Account Details");
@@ -90,25 +89,25 @@ public class Signup3 extends JFrame implements ActionListener {
         serviceCBox1 = new JCheckBox("ATM CARD");
         serviceCBox1.setBackground(Color.WHITE);
         serviceCBox1.setFont(new Font("Raleway", Font.BOLD, 16));
-        serviceCBox1.setBounds(100,450,200,30);
+        serviceCBox1.setBounds(100,500,200,30);
         add(serviceCBox1);
 
         serviceCBox2 = new JCheckBox("Internet Banking");
         serviceCBox2.setBackground(Color.WHITE);
         serviceCBox2.setFont(new Font("Raleway", Font.BOLD, 16));
-        serviceCBox2.setBounds(100,500,200,30);
+        serviceCBox2.setBounds(100,550,200,30);
         add(serviceCBox2);
 
         serviceCBox3 = new JCheckBox("Mobile Banking");
         serviceCBox3.setBackground(Color.WHITE);
         serviceCBox3.setFont(new Font("Raleway", Font.BOLD, 16));
-        serviceCBox3.setBounds(350,500,200,30);
+        serviceCBox3.setBounds(100,600,200,30);
         add(serviceCBox3);
 
         serviceCBox4 = new JCheckBox("EMAIL Alerts");
         serviceCBox4.setBackground(Color.WHITE);
         serviceCBox4.setFont(new Font("Raleway", Font.BOLD, 16));
-        serviceCBox4.setBounds(100,550,200,30);
+        serviceCBox4.setBounds(350,500,200,30);
         add(serviceCBox4);
 
         serviceCBox5 = new JCheckBox("Cheque Book");
@@ -120,7 +119,7 @@ public class Signup3 extends JFrame implements ActionListener {
         serviceCBox6 = new JCheckBox("E-Statement");
         serviceCBox6.setBackground(Color.WHITE);
         serviceCBox6.setFont(new Font("Raleway", Font.BOLD, 16));
-        serviceCBox6.setBounds(350,450,200,30);
+        serviceCBox6.setBounds(350,600,200,30);
         add(serviceCBox6);
 
         serviceCBox7 = new JCheckBox("I allow processing my personal data.",true);
@@ -160,14 +159,12 @@ public class Signup3 extends JFrame implements ActionListener {
         radioBtnGroup.add(radioBtn3);
         radioBtnGroup.add(radioBtn4);
 
-
+        setTitle("Signup form - Step 3");
+        setLayout(null);
         getContentPane().setBackground(Color.WHITE);
         setSize(850,850);
-        setLocation(500,120);
+        setLocation(350,10);
         setVisible(true);
-
-
-
     }
 
     @Override
@@ -187,11 +184,11 @@ public class Signup3 extends JFrame implements ActionListener {
             }
 
             Random ran = new Random();
-            long first7 = (ran.nextLong() % 90000000L) + 5040936000000000L;
-            String cardNum = "" + Math.abs(first7);
+            long cardNumRand = (ran.nextLong() % 90000000L) + 5040936000000000L;
+            String cardNum = String.valueOf(Math.abs(cardNumRand));
 
-            long first3 = (ran.nextLong() % 9000L) + 1000L;
-            String pin = "" + Math.abs(first3);
+            long pinNumRand = (ran.nextLong() % 9000L) + 1000L;
+            String pin = String.valueOf(Math.abs(pinNumRand));
 
             String service = "";
             if(serviceCBox1.isSelected()){
@@ -218,7 +215,8 @@ public class Signup3 extends JFrame implements ActionListener {
 
                     if(accountType.equals("")){
                         JOptionPane.showMessageDialog(null, "Fill all the required fields");
-                    }else{
+                    }
+                    else{
                         Connector connector = new Connector();
                         String q1 = "insert into signup3 values('"+formNum+"','"+accountType+"','"+cardNum+"','"+pin+"','"+service+"')";
                         String q2 = "insert into login values('"+formNum+"', '"+cardNum+"', '"+pin+"')";
@@ -232,7 +230,7 @@ public class Signup3 extends JFrame implements ActionListener {
                 ex.printStackTrace();
             }
         } if (e.getSource() == cancelBtn){
-            System.out.println("gggggg");
+            System.exit(0);
         }
 
     }

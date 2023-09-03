@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b90b077-6228-45b8-b6c5-28e577989932" name="Changes" comment="Signup third form">
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="6b90b077-6228-45b8-b6c5-28e577989932" name="Changes" comment="Connectivity issues resolved">
+      <change afterPath="$PROJECT_DIR$/src/main/java/System/Transactions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/atm.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/System/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/System/Signup1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Signup1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/System/Signup2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Signup2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/System/Signup3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Signup3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="update(BankingSystem)_v1.03" />
+        <entry key="$PROJECT_DIR$" value="update(BankingSystem)_v1.04" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,9 +67,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\Banking System\src\main\resources\icons" />
       <recent name="C:\Users\Mysza\Desktop\Banking System\src\main\resources\icons" />
       <recent name="C:\Users\Mysza\Desktop\Banking System\src\main\resources" />
-      <recent name="C:\Users\Administrator\Desktop\Banking System\src\main\resources\icons" />
       <recent name="C:\Users\Administrator\Desktop\Banking System\src\main\java\System\res" />
     </key>
   </component>
@@ -110,10 +113,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Transactions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="System.Transactions" />
+      <module name="BankingSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="System.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Login" />
         <item itemvalue="Application.Signup1" />
+        <item itemvalue="Application.Login" />
+        <item itemvalue="Application.Transactions" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -141,7 +158,9 @@
       <workItem from="1693408768178" duration="11385000" />
       <workItem from="1693500271085" duration="8948000" />
       <workItem from="1693560061400" duration="713000" />
-      <workItem from="1693583826506" duration="3246000" />
+      <workItem from="1693583826506" duration="6910000" />
+      <workItem from="1693681148637" duration="832000" />
+      <workItem from="1693734584092" duration="12893000" />
     </task>
     <task id="LOCAL-00001" summary="Login page with &quot;clear&quot; button functionality">
       <created>1692616835943</created>
@@ -178,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693584959483</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Connectivity issues resolved">
+      <created>1693587256032</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693587256032</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,7 +216,8 @@
     <MESSAGE value="Database connectivity, refractoring" />
     <MESSAGE value="Signup second form" />
     <MESSAGE value="Signup third form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Signup third form" />
+    <MESSAGE value="Connectivity issues resolved" />
+    <option name="LAST_COMMIT_MESSAGE" value="Connectivity issues resolved" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

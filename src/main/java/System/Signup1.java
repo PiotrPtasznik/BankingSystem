@@ -18,7 +18,6 @@ public class Signup1 extends JFrame implements ActionListener {
 
     JButton next;
     Signup1(){
-        setLayout(null);
 
         Random rand = new Random();
         random = Math.abs((rand.nextLong() % 9000L) + 1000L);
@@ -162,6 +161,11 @@ public class Signup1 extends JFrame implements ActionListener {
         pinCodeTextField.setFont(new Font("Calibri", Font.BOLD, 18));
         add(pinCodeTextField);
 
+        pinCodeTextField = new JTextField();
+        pinCodeTextField.setBounds(400,480,400,30);
+        pinCodeTextField.setFont(new Font("Calibri", Font.BOLD, 18));
+        add(pinCodeTextField);
+
         next = new JButton("Next");
         next.setBounds(720, 520, 80, 30);
         next.setBackground(Color.BLACK);
@@ -169,9 +173,9 @@ public class Signup1 extends JFrame implements ActionListener {
         next.addActionListener(this);
         add(next);
 
-
+        setTitle("Signup form - Step 1");
+        setLayout(null);
         getContentPane().setBackground(Color.white);
-
         setSize(850,800);
         setLocation(350,10);
         setVisible(true);
@@ -179,7 +183,7 @@ public class Signup1 extends JFrame implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e) {
-        String formNum = "" + random;
+        String formNum = String.valueOf(random);
         String name = nameTextField.getText();
         String surName = surNameTextField.getText();
         String dob =( (JTextField)dateChooser.getDateEditor().getUiComponent()).getText();

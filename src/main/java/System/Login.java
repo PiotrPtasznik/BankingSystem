@@ -14,9 +14,6 @@ public class Login extends JFrame implements ActionListener {
     JLabel label, text, cardNum, pin;
 
     Login(){
-        setTitle("Login window");
-
-        setLayout(null);
 
         ImageIcon imgIc = new ImageIcon(ClassLoader.getSystemResource("icons/logo.png"));
         Image imgIc2 = imgIc.getImage().getScaledInstance(100, 100 , Image.SCALE_DEFAULT);
@@ -37,6 +34,7 @@ public class Login extends JFrame implements ActionListener {
         add(cardNum);
 
         cardTextField = new JTextField();
+        cardTextField.setFont(new Font("Calibri", Font.BOLD, 18));
         cardTextField.setBounds(280, 180, 250, 30);
         add(cardTextField);
 
@@ -46,6 +44,7 @@ public class Login extends JFrame implements ActionListener {
         add(pin);
 
         pinTextField = new JTextField();
+        pinTextField.setFont(new Font("Calibri", Font.BOLD, 18));
         pinTextField.setBounds(280, 250, 250, 30);
         add(pinTextField);
 
@@ -71,11 +70,13 @@ public class Login extends JFrame implements ActionListener {
         add(signup);
 
 
+        setTitle("Login window");
+        setLayout(null);
         getContentPane().setBackground(Color.white);
-
         setSize(800,480);
-        setVisible(true);
         setLocation(350,200);
+        setVisible(true);
+
         }
 
     @Override
@@ -88,20 +89,19 @@ public class Login extends JFrame implements ActionListener {
             Connector connector = new Connector();
             String cardnumber = cardTextField.getText();
             String pinnumber = pinTextField.getText();
-            String query = "select from login where cardnumber = '"+cardnumber+"' and pinnumber = '"+pinnumber+"'";
+            String query = "select * from login where cardnumber = '"+cardnumber+"' and pinnumber = '"+pinnumber+"'";
             try {
                 ResultSet rs = connector.s.executeQuery(query);
                 if(rs.next()){
                     setVisible(false);
-                    //banking operations
-                    System.out.println("jests w bankomacie");
+                    new Transactions(pinnumber).setVisible(true);
                 }
                 else {
-                    JOptionPane.showMessageDialog(null, "Incorrect cadnumber or pin values");
+                    JOptionPane.showMessageDialog(null, "Incorrect cardnumber or pin ");
                 }
             }
             catch (Exception e){
-                System.out.println(e);
+                e.printStackTrace();
             }
         }
         else  if (ae.getSource() == signup){

@@ -7,7 +7,6 @@ import java.awt.event.ActionListener;
 
 public class Signup2 extends JFrame implements ActionListener {
 
-    long random;
     JTextField phoneNumberTextField, occupationTextField;
     JLabel additionalDetails, phoneNumber, education, insurance, income, employment, occupation, retirement, drivingLicense, drivingLicenseNumber;
     JRadioButton insured, uninsured, employed, unemployed, retired, unretired , drivingLicenseY , drivingLicenseN;
@@ -17,7 +16,6 @@ public class Signup2 extends JFrame implements ActionListener {
 
     Signup2(String formNum){
         this.formNum = formNum;
-        setLayout(null);
 
         additionalDetails = new JLabel("Page 2 : Additional details");
         additionalDetails.setBounds(290,60,400,30);
@@ -129,8 +127,8 @@ public class Signup2 extends JFrame implements ActionListener {
         add(unretired);
 
         ButtonGroup retirement = new ButtonGroup();
-        maritalBtnGroup.add(retired);
-        maritalBtnGroup.add(unretired);
+        retirement.add(retired);
+        retirement.add(unretired);
 
         drivingLicense = new JLabel("Driving license");
         drivingLicense.setBounds(200,400,400,30);
@@ -172,9 +170,9 @@ public class Signup2 extends JFrame implements ActionListener {
         nextBtn.addActionListener(this);
         add(nextBtn);
 
-
+        setTitle("Signup form - Step 2");
+        setLayout(null);
         getContentPane().setBackground(Color.white);
-
         setSize(850,800);
         setLocation(350,10);
         setVisible(true);
@@ -206,10 +204,10 @@ public class Signup2 extends JFrame implements ActionListener {
 
         String pensioner = null;
         if (retired.isSelected()){
-            employment = "Retired";
+            pensioner = "Retired";
         }
         if(unretired.isSelected()){
-            employment = "Unretired";
+            pensioner = "Unretired";
         }
 
         String drivingLicense = null;
