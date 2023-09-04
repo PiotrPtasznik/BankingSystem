@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 public class Signup2 extends JFrame implements ActionListener {
 
     JTextField phoneNumberTextField, occupationTextField;
-    JLabel additionalDetails, phoneNumber, education, insurance, income, employment, occupation, retirement, drivingLicense, drivingLicenseNumber;
+    JLabel label1, label2, label3, label4, label5, label6, label7, label8, label9, label10;
     JRadioButton insured, uninsured, employed, unemployed, retired, unretired , drivingLicenseY , drivingLicenseN;
     JButton nextBtn;
     JComboBox educationCBox, incomeCBox, drivingLicenseCBox;
@@ -17,25 +17,25 @@ public class Signup2 extends JFrame implements ActionListener {
     Signup2(String formNum){
         this.formNum = formNum;
 
-        additionalDetails = new JLabel("Page 2 : Additional details");
-        additionalDetails.setBounds(290,60,400,30);
-        additionalDetails.setFont(new Font("Calibri", Font.BOLD, 22));
-        add(additionalDetails);
+        label1 = new JLabel("Page 2 : Additional details");
+        label1.setBounds(290,60,400,30);
+        label1.setFont(new Font("Calibri", Font.BOLD, 22));
+        add(label1);
 
-        phoneNumber = new JLabel("Phone number");
-        phoneNumber.setBounds(200,120,400,30);
-        phoneNumber.setFont(new Font("Calibri", Font.BOLD, 18));
-        add(phoneNumber);
+        label2 = new JLabel("Phone number");
+        label2.setBounds(200,120,400,30);
+        label2.setFont(new Font("Calibri", Font.BOLD, 18));
+        add(label2);
 
         phoneNumberTextField = new JTextField();
         phoneNumberTextField.setBounds(400,120,400,30);
         phoneNumberTextField.setFont(new Font("Calibri", Font.BOLD, 18));
         add(phoneNumberTextField);
 
-        education = new JLabel("Level of education");
-        education.setBounds(200,160,400,30);
-        education.setFont(new Font("Calibri", Font.BOLD, 18));
-        add(education);
+        label3 = new JLabel("Level of education");
+        label3.setBounds(200,160,400,30);
+        label3.setFont(new Font("Calibri", Font.BOLD, 18));
+        add(label3);
 
         String[] educationValues = {"--", "Uneducated", "Primary", "Secondary", "High School", "Associate's Degree", "Bachelor's Degree", "Master's Degree", "Doctoral Degree"};
         educationCBox = new JComboBox<>(educationValues);
@@ -45,10 +45,10 @@ public class Signup2 extends JFrame implements ActionListener {
         add(educationCBox);
 
 
-        insurance = new JLabel("Insured");
-        insurance.setBounds(200,200,400,30);
-        insurance.setFont(new Font("Calibri", Font.BOLD, 18));
-        add(insurance);
+        label4 = new JLabel("Insured");
+        label4.setBounds(200,200,400,30);
+        label4.setFont(new Font("Calibri", Font.BOLD, 18));
+        add(label4);
 
         insured = new JRadioButton("Insured");
         insured.setBounds(400,200,140,30);
@@ -66,10 +66,10 @@ public class Signup2 extends JFrame implements ActionListener {
         genderBtnGroup.add(insured);
         genderBtnGroup.add(uninsured);
 
-        income = new JLabel("Income");
-        income.setBounds(200,240,400,30);
-        income.setFont(new Font("Calibri", Font.BOLD, 18));
-        add(income);
+        label5 = new JLabel("Income");
+        label5.setBounds(200,240,400,30);
+        label5.setFont(new Font("Calibri", Font.BOLD, 18));
+        add(label5);
 
         String[] incomeValues = {"--", "Less than 1000$", "1000-2000$", "2000-5000$", "5000-10 000$", "Over 10 000$"};
         incomeCBox = new JComboBox<>(incomeValues);
@@ -78,10 +78,10 @@ public class Signup2 extends JFrame implements ActionListener {
         incomeCBox.setBackground(Color.white);
         add(incomeCBox);
 
-        employment = new JLabel("Employed");
-        employment.setBounds(200,280,400,30);
-        employment.setFont(new Font("Calibri", Font.BOLD, 18));
-        add(employment);
+        label6 = new JLabel("Employed");
+        label6.setBounds(200,280,400,30);
+        label6.setFont(new Font("Calibri", Font.BOLD, 18));
+        add(label6);
 
         employed = new JRadioButton("Employed");
         employed.setBounds(400,280,120,30);
@@ -99,20 +99,20 @@ public class Signup2 extends JFrame implements ActionListener {
         maritalBtnGroup.add(employed);
         maritalBtnGroup.add(unemployed);
 
-        occupation = new JLabel("Occupation");
-        occupation.setBounds(200,320,400,30);
-        occupation.setFont(new Font("Calibri", Font.BOLD, 18));
-        add(occupation);
+        label7 = new JLabel("Occupation");
+        label7.setBounds(200,320,400,30);
+        label7.setFont(new Font("Calibri", Font.BOLD, 18));
+        add(label7);
 
         occupationTextField = new JTextField();
         occupationTextField.setBounds(400,320,400,30);
         occupationTextField.setFont(new Font("Calibri", Font.BOLD, 18));
         add(occupationTextField);
 
-        retirement = new JLabel("Pensioner");
-        retirement.setBounds(200,360,400,30);
-        retirement.setFont(new Font("Calibri", Font.BOLD, 18));
-        add(retirement);
+        label8 = new JLabel("Pensioner");
+        label8.setBounds(200,360,400,30);
+        label8.setFont(new Font("Calibri", Font.BOLD, 18));
+        add(label8);
 
         retired = new JRadioButton("Yes");
         retired.setBounds(400,360,120,30);
@@ -130,10 +130,10 @@ public class Signup2 extends JFrame implements ActionListener {
         retirement.add(retired);
         retirement.add(unretired);
 
-        drivingLicense = new JLabel("Driving license");
-        drivingLicense.setBounds(200,400,400,30);
-        drivingLicense.setFont(new Font("Calibri", Font.BOLD, 18));
-        add(drivingLicense);
+        label9 = new JLabel("Driving license");
+        label9.setBounds(200,400,400,30);
+        label9.setFont(new Font("Calibri", Font.BOLD, 18));
+        add(label9);
 
         drivingLicenseY = new JRadioButton("Have");
         drivingLicenseY.setBounds(400,400,120,30);
@@ -151,10 +151,10 @@ public class Signup2 extends JFrame implements ActionListener {
         drivingLicense.add(drivingLicenseY);
         drivingLicense.add(drivingLicenseN);
       
-        drivingLicenseNumber = new JLabel("Driving License Type");
-        drivingLicenseNumber.setBounds(200,440,400,30);
-        drivingLicenseNumber.setFont(new Font("Calibri", Font.BOLD, 18));
-        add(drivingLicenseNumber);
+        label10 = new JLabel("Driving License Type");
+        label10.setBounds(200,440,400,30);
+        label10.setFont(new Font("Calibri", Font.BOLD, 18));
+        add(label10);
 
         String[] drivingLicenseValues = {"--", "AM", "A1", "A2", "A", "B", "Other", "None"};
         drivingLicenseCBox = new JComboBox<>(drivingLicenseValues);

@@ -84,8 +84,6 @@ public class Signup3 extends JFrame implements ActionListener {
         cancelBtn.addActionListener(this);
         add(cancelBtn);
 
-
-
         serviceCBox1 = new JCheckBox("ATM CARD");
         serviceCBox1.setBackground(Color.WHITE);
         serviceCBox1.setFont(new Font("Raleway", Font.BOLD, 16));
@@ -223,6 +221,9 @@ public class Signup3 extends JFrame implements ActionListener {
                         connector.s.executeUpdate(q1);
                         connector.s.executeUpdate(q2);
                         JOptionPane.showMessageDialog(null, "Card Number: " + cardNum + "\n Pin:"+ pin);
+
+                        setVisible(false);
+                        new Login().setVisible(true);
                     }
                 }
             }
@@ -230,7 +231,8 @@ public class Signup3 extends JFrame implements ActionListener {
                 ex.printStackTrace();
             }
         } if (e.getSource() == cancelBtn){
-            System.exit(0);
+            setVisible(false);
+            new Login().setVisible(true);
         }
 
     }
