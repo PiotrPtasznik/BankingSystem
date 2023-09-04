@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 
 public class Transactions extends JFrame implements ActionListener {
 
-    JLabel label, transaction;
+    JLabel image, label1;
     JButton deposit, withdraw, balance, statement, transfer, pinChange, exit;
 
     String pinnumber;
@@ -21,67 +21,68 @@ public class Transactions extends JFrame implements ActionListener {
         Image imgIc2 = imgIc.getImage().getScaledInstance(900, 800 , Image.SCALE_DEFAULT);
         ImageIcon imgIc3 = new ImageIcon(imgIc2);
 
-        label = new JLabel(imgIc3);
-        label.setBounds(0,0, 900, 800);
-        add(label);
+        image = new JLabel(imgIc3);
+        image.setBounds(0,0, 900, 800);
+        add(image);
 
-        transaction = new JLabel("SELECT TRANSACTION");
-        transaction.setBounds(140,235, 400, 60);
-        transaction.setForeground(Color.white);
-        transaction.setFont(new Font("Calibri", Font.BOLD, 40));
-        label.add(transaction);
+        label1 = new JLabel("SELECT TRANSACTION");
+        label1.setBounds(140,235, 400, 60);
+        label1.setForeground(Color.white);
+        label1.setFont(new Font("Calibri", Font.BOLD, 40));
+        image.add(label1);
 
         deposit = new JButton("Deposit");
         deposit.setBounds(120,300, 180, 40);
         deposit.setForeground(Color.black);
         deposit.setFont(new Font("Calibri", Font.BOLD, 18));
-        label.add(deposit);
+        deposit.addActionListener(this);
+        image.add(deposit);
 
         withdraw = new JButton("Withdraw");
         withdraw.setBounds(120,350, 180, 40);
         withdraw.setForeground(Color.black);
         withdraw.setFont(new Font("Calibri", Font.BOLD, 18));
         withdraw.addActionListener(this);
-        label.add(withdraw);
+        image.add(withdraw);
 
         balance = new JButton("Check balance");
         balance.setBounds(120,400, 180, 40);
         balance.setForeground(Color.black);
         balance.setFont(new Font("Calibri", Font.BOLD, 18));
         balance.addActionListener(this);
-        label.add(balance);
+        image.add(balance);
 
         transfer = new JButton("Transfer");
         transfer.setBounds(348,300, 180, 40);
         transfer.setForeground(Color.black);
         transfer.setFont(new Font("Calibri", Font.BOLD, 18));
         transfer.addActionListener(this);
-        label.add(transfer);
+        image.add(transfer);
 
         pinChange = new JButton("PIN change");
         pinChange.setBounds(348,350, 180, 40);
         pinChange.setForeground(Color.black);
         pinChange.setFont(new Font("Calibri", Font.BOLD, 18));
         pinChange.addActionListener(this);
-        label.add(pinChange);
+        image.add(pinChange);
 
         statement = new JButton("Account statement");
         statement.setBounds(348,400, 180, 40);
         statement.setForeground(Color.black);
         statement.setFont(new Font("Calibri", Font.BOLD, 18));
         statement.addActionListener(this);
-        label.add(statement);
+        image.add(statement);
 
         exit = new JButton("Exit");
         exit.setBounds(348,450, 180, 40);
         exit.setForeground(Color.black);
         exit.setFont(new Font("Calibri", Font.BOLD, 18));
         exit.addActionListener(this);
-        label.add(exit);
+        image.add(exit);
 
         setTitle("ATM");
         setSize(900, 800);
-        setLocation(900,0);
+        setLocation(900,20);
         getContentPane().setBackground(Color.white);
         setUndecorated(true);
         setVisible(true);
@@ -91,6 +92,10 @@ public class Transactions extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == exit){
             System.exit(0);
+        }
+        if(e.getSource() == deposit){
+            setVisible(false);
+            new Deposit(pinnumber).setVisible(true);
         }
 
     }

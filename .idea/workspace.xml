@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b90b077-6228-45b8-b6c5-28e577989932" name="Changes" comment="Connectivity issues resolved">
-      <change afterPath="$PROJECT_DIR$/src/main/java/System/Transactions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/atm.png" afterDir="false" />
+    <list default="true" id="6b90b077-6228-45b8-b6c5-28e577989932" name="Changes" comment="&quot;Transactions&quot; frame created, &quot;Login&quot; functionality, minor code cleanup">
+      <change afterPath="$PROJECT_DIR$/src/main/java/System/Deposit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/System/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/System/Signup1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Signup1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/System/Signup2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Signup2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/System/Signup3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Signup3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/System/Transactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Transactions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +80,7 @@
       <module name="BankingSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="System.*" />
+          <option name="PATTERN" value="System.atm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,7 +93,7 @@
       <module name="BankingSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="System.*" />
+          <option name="PATTERN" value="System.atm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,7 +106,7 @@
       <module name="BankingSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="System.*" />
+          <option name="PATTERN" value="System.atm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,11 +115,11 @@
       </method>
     </configuration>
     <configuration name="Transactions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="System.Transactions" />
+      <option name="MAIN_CLASS_NAME" value="System.atm.Transactions" />
       <module name="BankingSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="System.*" />
+          <option name="PATTERN" value="System.atm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,8 +129,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Signup1" />
         <item itemvalue="Application.Login" />
+        <item itemvalue="Application.Signup1" />
         <item itemvalue="Application.Transactions" />
         <item itemvalue="Application.Main" />
       </list>
@@ -160,7 +161,8 @@
       <workItem from="1693560061400" duration="713000" />
       <workItem from="1693583826506" duration="6910000" />
       <workItem from="1693681148637" duration="832000" />
-      <workItem from="1693734584092" duration="12893000" />
+      <workItem from="1693734584092" duration="16863000" />
+      <workItem from="1693823667163" duration="8370000" />
     </task>
     <task id="LOCAL-00001" summary="Login page with &quot;clear&quot; button functionality">
       <created>1692616835943</created>
@@ -204,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693587256032</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="&quot;Transactions&quot; frame created, &quot;Login&quot; functionality, minor code cleanup">
+      <created>1693758253196</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693758253197</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +226,8 @@
     <MESSAGE value="Signup second form" />
     <MESSAGE value="Signup third form" />
     <MESSAGE value="Connectivity issues resolved" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connectivity issues resolved" />
+    <MESSAGE value="&quot;Transactions&quot; frame created, &quot;Login&quot; functionality, minor code cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Transactions&quot; frame created, &quot;Login&quot; functionality, minor code cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

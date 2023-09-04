@@ -10,8 +10,7 @@ public class Login extends JFrame implements ActionListener {
 
     JButton login, clear, signup;
     JTextField cardTextField, pinTextField;
-
-    JLabel label, text, cardNum, pin;
+    JLabel label1, label2, label3, label4;
 
     Login(){
 
@@ -19,29 +18,29 @@ public class Login extends JFrame implements ActionListener {
         Image imgIc2 = imgIc.getImage().getScaledInstance(100, 100 , Image.SCALE_DEFAULT);
         ImageIcon imgIc3 = new ImageIcon(imgIc2);
 
-        label = new JLabel(imgIc3);
-        label.setBounds(70,10, 100, 120);
-        add(label);
+        label1 = new JLabel(imgIc3);
+        label1.setBounds(70,10, 100, 120);
+        add(label1);
 
-        text = new JLabel("Welcome to ATM");
-        text.setFont(new Font("Calibri",Font.BOLD, 40));
-        text.setBounds(260, 60, 400, 40);
-        add(text);
+        label2 = new JLabel("Welcome to ATM");
+        label2.setFont(new Font("Calibri",Font.BOLD, 40));
+        label2.setBounds(260, 60, 400, 40);
+        add(label2);
 
-        cardNum = new JLabel("Card Num :");
-        cardNum.setFont(new Font("Calibri",Font.BOLD, 30));
-        cardNum.setBounds(100, 180, 400, 40);
-        add(cardNum);
+        label3 = new JLabel("Card Num :");
+        label3.setFont(new Font("Calibri",Font.BOLD, 30));
+        label3.setBounds(100, 180, 400, 40);
+        add(label3);
 
         cardTextField = new JTextField();
         cardTextField.setFont(new Font("Calibri", Font.BOLD, 18));
         cardTextField.setBounds(280, 180, 250, 30);
         add(cardTextField);
 
-        pin = new JLabel("PIN :");
-        pin.setFont(new Font("Calibri",Font.BOLD, 30));
-        pin.setBounds(100, 250, 400, 40);
-        add(pin);
+        label4 = new JLabel("PIN :");
+        label4.setFont(new Font("Calibri",Font.BOLD, 30));
+        label4.setBounds(100, 250, 400, 40);
+        add(label4);
 
         pinTextField = new JTextField();
         pinTextField.setFont(new Font("Calibri", Font.BOLD, 18));

@@ -12,60 +12,90 @@ public class Signup1 extends JFrame implements ActionListener {
 
     public long random;
      JTextField nameTextField, surNameTextField, emailTextField, addressTextField, cityTextField, stateTextField, pinCodeTextField ;
-     JLabel fromNum, personDetails, name, surName, birthDate, gender, email, marital, address, city, state, pinCode;
+     JLabel label1, label2, label3, label4, label5, label6, label7, label8, label9, label10, label11, label12;
      JRadioButton male, female,  married, unmarried, other;
-     JDateChooser  dateChooser;
+     JDateChooser dateChooser;
+     JButton nextBtn;
 
-    JButton next;
     Signup1(){
 
         Random rand = new Random();
         random = Math.abs((rand.nextLong() % 9000L) + 1000L);
 
-        fromNum = new JLabel("Application form number : " + random);
-        fromNum.setBounds(140,20,600,40);
-        fromNum.setFont(new Font("Calibri", Font.BOLD, 38));
-        add(fromNum);
+        label1 = new JLabel("Application form number : " + random);
+        label1.setBounds(140,20,600,40);
+        label1.setFont(new Font("Calibri", Font.BOLD, 38));
+        add(label1);
 
-        personDetails = new JLabel("Page 1 : Personal details");
-        personDetails.setBounds(290,60,400,30);
-        personDetails.setFont(new Font("Calibri", Font.BOLD, 22));
-        add(personDetails);
+        label2 = new JLabel("Page 1 : Personal details");
+        label2.setBounds(290,60,400,30);
+        label2.setFont(new Font("Calibri", Font.BOLD, 22));
+        add(label2);
 
-        name = new JLabel("Name");
-        name.setBounds(200,120,400,30);
-        name.setFont(new Font("Calibri", Font.BOLD, 18));
-        add(name);
+        label3 = new JLabel("Name");
+        label3.setBounds(200,120,400,30);
+        label3.setFont(new Font("Calibri", Font.BOLD, 18));
+        add(label3);
+
+        label4 = new JLabel("Surname");
+        label4.setBounds(200,160,400,30);
+        label4.setFont(new Font("Calibri", Font.BOLD, 18));
+        add(label4);
+
+        label5 = new JLabel("Date of birth");
+        label5.setBounds(200,200,400,30);
+        label5.setFont(new Font("Calibri", Font.BOLD, 18));
+        add(label5);
+
+        label6 = new JLabel("Gender");
+        label6.setBounds(200,240,400,30);
+        label6.setFont(new Font("Calibri", Font.BOLD, 18));
+        add(label6);
+
+        label7 = new JLabel("Email");
+        label7.setBounds(200,280,400,30);
+        label7.setFont(new Font("Calibri", Font.BOLD, 18));
+        add(label7);
+
+        label8 = new JLabel("Marital status");
+        label8.setBounds(200,320,400,30);
+        label8.setFont(new Font("Calibri", Font.BOLD, 18));
+        add(label8);
+
+        label9 = new JLabel("Address");
+        label9.setBounds(200,360,400,30);
+        label9.setFont(new Font("Calibri", Font.BOLD, 18));
+        add(label9);
+
+        label10 = new JLabel("City");
+        label10.setBounds(200,400,400,30);
+        label10.setFont(new Font("Calibri", Font.BOLD, 18));
+        add(label10);
+
+        label11 = new JLabel("State");
+        label11.setBounds(200,440,400,30);
+        label11.setFont(new Font("Calibri", Font.BOLD, 18));
+        add(label11);
+
+        label12 = new JLabel("PIN Code");
+        label12.setBounds(200,480,400,30);
+        label12.setFont(new Font("Calibri", Font.BOLD, 18));
+        add(label12);
 
         nameTextField = new JTextField();
         nameTextField.setBounds(400,120,400,30);
         nameTextField.setFont(new Font("Calibri", Font.BOLD, 18));
         add(nameTextField);
 
-        surName = new JLabel("Surname");
-        surName.setBounds(200,160,400,30);
-        surName.setFont(new Font("Calibri", Font.BOLD, 18));
-        add(surName);
-
         surNameTextField = new JTextField();
         surNameTextField.setBounds(400,160,400,30);
         surNameTextField.setFont(new Font("Calibri", Font.BOLD, 18));
         add(surNameTextField);
 
-        birthDate = new JLabel("Date of birth");
-        birthDate.setBounds(200,200,400,30);
-        birthDate.setFont(new Font("Calibri", Font.BOLD, 18));
-        add(birthDate);
-
         dateChooser  = new JDateChooser();
         dateChooser.setBounds(400,200,200,30);
         dateChooser.setForeground(Color.white);
         add(dateChooser);
-
-        gender = new JLabel("Gender");
-        gender.setBounds(200,240,400,30);
-        gender.setFont(new Font("Calibri", Font.BOLD, 18));
-        add(gender);
 
         male = new JRadioButton("Male");
         male.setBounds(400,240,80,30);
@@ -83,20 +113,10 @@ public class Signup1 extends JFrame implements ActionListener {
         genderBtnGroup.add(male);
         genderBtnGroup.add(female);
 
-        email = new JLabel("Email");
-        email.setBounds(200,280,400,30);
-        email.setFont(new Font("Calibri", Font.BOLD, 18));
-        add(email);
-
         emailTextField = new JTextField();
         emailTextField.setBounds(400,280,400,30);
         emailTextField.setFont(new Font("Calibri", Font.BOLD, 18));
         add(emailTextField);
-
-        marital = new JLabel("Marital status");
-        marital.setBounds(200,320,400,30);
-        marital.setFont(new Font("Calibri", Font.BOLD, 18));
-        add(marital);
 
         married = new JRadioButton("Married");
         married.setBounds(400,320,120,30);
@@ -121,57 +141,32 @@ public class Signup1 extends JFrame implements ActionListener {
         maritalBtnGroup.add(unmarried);
         maritalBtnGroup.add(other);
 
-        address = new JLabel("Address");
-        address.setBounds(200,360,400,30);
-        address.setFont(new Font("Calibri", Font.BOLD, 18));
-        add(address);
-
         addressTextField = new JTextField();
         addressTextField.setBounds(400,360,400,30);
         addressTextField.setFont(new Font("Calibri", Font.BOLD, 18));
         add(addressTextField);
-
-        city = new JLabel("city");
-        city.setBounds(200,400,400,30);
-        city.setFont(new Font("Calibri", Font.BOLD, 18));
-        add(city);
 
         cityTextField = new JTextField();
         cityTextField.setBounds(400,400,400,30);
         cityTextField.setFont(new Font("Calibri", Font.BOLD, 18));
         add(cityTextField);
 
-        state = new JLabel("state");
-        state.setBounds(200,440,400,30);
-        state.setFont(new Font("Calibri", Font.BOLD, 18));
-        add(state);
-
         stateTextField = new JTextField();
         stateTextField.setBounds(400,440,400,30);
         stateTextField.setFont(new Font("Calibri", Font.BOLD, 18));
         add(stateTextField);
 
-        pinCode = new JLabel("PIN Code");
-        pinCode.setBounds(200,480,400,30);
-        pinCode.setFont(new Font("Calibri", Font.BOLD, 18));
-        add(pinCode);
-
         pinCodeTextField = new JTextField();
         pinCodeTextField.setBounds(400,480,400,30);
         pinCodeTextField.setFont(new Font("Calibri", Font.BOLD, 18));
         add(pinCodeTextField);
 
-        pinCodeTextField = new JTextField();
-        pinCodeTextField.setBounds(400,480,400,30);
-        pinCodeTextField.setFont(new Font("Calibri", Font.BOLD, 18));
-        add(pinCodeTextField);
-
-        next = new JButton("Next");
-        next.setBounds(720, 520, 80, 30);
-        next.setBackground(Color.BLACK);
-        next.setForeground(Color.white);
-        next.addActionListener(this);
-        add(next);
+        nextBtn = new JButton("Next");
+        nextBtn.setBounds(720, 520, 80, 30);
+        nextBtn.setBackground(Color.BLACK);
+        nextBtn.setForeground(Color.white);
+        nextBtn.addActionListener(this);
+        add(nextBtn);
 
         setTitle("Signup form - Step 1");
         setLayout(null);
@@ -200,7 +195,7 @@ public class Signup1 extends JFrame implements ActionListener {
             marital = "Married";
         }
         if(unmarried.isSelected()){
-            marital = "Unmarried";
+            marital = "Single";
         }
         if(other.isSelected()){
             marital = "Other";
