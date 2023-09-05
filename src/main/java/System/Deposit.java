@@ -12,7 +12,6 @@ public class Deposit extends JFrame implements ActionListener {
     JLabel label1;
     JTextField amount;
     JButton backBtn, depositBtn;
-
     String pinnnumber;
 
     Deposit(String pinnumber){
@@ -57,7 +56,7 @@ public class Deposit extends JFrame implements ActionListener {
         setVisible(true);
     }
 
-    public static void main (String args[]){
+    public static void main (String[] args){
         new Deposit("");
     }
 
