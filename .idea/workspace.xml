@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b90b077-6228-45b8-b6c5-28e577989932" name="Changes" comment="&quot;Transactions&quot; frame created, &quot;Login&quot; functionality, minor code cleanup">
-      <change afterPath="$PROJECT_DIR$/src/main/java/System/Deposit.java" afterDir="false" />
+    <list default="true" id="6b90b077-6228-45b8-b6c5-28e577989932" name="Changes" comment="&quot;Deposit&quot; frame created, functionality added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/System/Withdraw.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/System/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/System/Signup1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Signup1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/System/Signup2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Signup2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/System/Signup3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Signup3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/System/Deposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Deposit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/System/Transactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Transactions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="update(BankingSystem)_v1.04" />
+        <entry key="$PROJECT_DIR$" value="update(BankingSystem)_v1.05" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -127,8 +124,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Withdraw" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="System.Withdraw" />
+      <module name="BankingSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="System.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Withdraw" />
         <item itemvalue="Application.Login" />
         <item itemvalue="Application.Signup1" />
         <item itemvalue="Application.Transactions" />
@@ -162,7 +173,9 @@
       <workItem from="1693583826506" duration="6910000" />
       <workItem from="1693681148637" duration="832000" />
       <workItem from="1693734584092" duration="16863000" />
-      <workItem from="1693823667163" duration="8370000" />
+      <workItem from="1693823667163" duration="10359000" />
+      <workItem from="1693864119992" duration="2860000" />
+      <workItem from="1693910239239" duration="4452000" />
     </task>
     <task id="LOCAL-00001" summary="Login page with &quot;clear&quot; button functionality">
       <created>1692616835943</created>
@@ -213,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693758253197</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="&quot;Deposit&quot; frame created, functionality added">
+      <created>1693854925002</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1693854925002</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +247,8 @@
     <MESSAGE value="Signup third form" />
     <MESSAGE value="Connectivity issues resolved" />
     <MESSAGE value="&quot;Transactions&quot; frame created, &quot;Login&quot; functionality, minor code cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Transactions&quot; frame created, &quot;Login&quot; functionality, minor code cleanup" />
+    <MESSAGE value="&quot;Deposit&quot; frame created, functionality added" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Deposit&quot; frame created, functionality added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
