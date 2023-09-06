@@ -101,6 +101,10 @@ public class Transactions extends JFrame implements ActionListener {
             setVisible(false);
             new Withdraw(pinnumber).setVisible(true);
         }
+        if(e.getSource() == balance){
+            setVisible(false);
+            new CheckBalance(pinnumber).setVisible(true);
+        }
 
     }
 

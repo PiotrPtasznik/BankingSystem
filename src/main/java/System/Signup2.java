@@ -220,17 +220,18 @@ public class Signup2 extends JFrame implements ActionListener {
 
         String drivingLicenseValues = (String) drivingLicenseCBox.getSelectedItem();
 
-        try {
-            Connector c = new Connector();
-            String query = "Insert into signup2 values('"+formNum+"', '"+phone+"', '"+education+"','"+insurance+"','"+income+"','"+employment+"','"+occupation+"','"+pensioner+"','"+drivingLicense+"','"+drivingLicenseValues+"')";
-            c.s.executeUpdate(query);
+        if (e.getSource() == nextBtn) {
+            try {
+                Connector c = new Connector();
+                String query = "Insert into signup2 values('" + formNum + "', '" + phone + "', '" + education + "','" + insurance + "','" + income + "','" + employment + "','" + occupation + "','" + pensioner + "','" + drivingLicense + "','" + drivingLicenseValues + "')";
+                c.s.executeUpdate(query);
 
-            setVisible(false);
-            new Signup3(formNum).setVisible(true);
+                setVisible(false);
+                new Signup3(formNum).setVisible(true);
 
-        }
-        catch (Exception ex){
-            System.out.println(e);
+            } catch (Exception ex) {
+                System.out.println(e);
+            }
         }
     }
 
