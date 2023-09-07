@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b90b077-6228-45b8-b6c5-28e577989932" name="Changes" comment="&quot;Withdraw&quot; frame created, functionality added">
-      <change afterPath="$PROJECT_DIR$/src/main/java/System/CheckBalance.java" afterDir="false" />
+    <list default="true" id="6b90b077-6228-45b8-b6c5-28e577989932" name="Changes" comment="&quot;CheckBalance&quot; frame created, functionality added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/System/PinChange.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/System/Deposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Deposit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/System/Signup2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Signup2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/System/Transactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Transactions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="update(BankingSystem)_v1.06" />
+        <entry key="$PROJECT_DIR$" value="update(BankingSystem)_v1.07" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -178,7 +177,8 @@
       <workItem from="1693864119992" duration="2860000" />
       <workItem from="1693910239239" duration="4650000" />
       <workItem from="1693992070615" duration="625000" />
-      <workItem from="1694030486166" duration="2518000" />
+      <workItem from="1694030486166" duration="3255000" />
+      <workItem from="1694108818077" duration="2617000" />
     </task>
     <task id="LOCAL-00001" summary="Login page with &quot;clear&quot; button functionality">
       <created>1692616835943</created>
@@ -243,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693951072147</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="&quot;CheckBalance&quot; frame created, functionality added">
+      <created>1694034575697</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1694034575697</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +266,8 @@
     <MESSAGE value="&quot;Transactions&quot; frame created, &quot;Login&quot; functionality, minor code cleanup" />
     <MESSAGE value="&quot;Deposit&quot; frame created, functionality added" />
     <MESSAGE value="&quot;Withdraw&quot; frame created, functionality added" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Withdraw&quot; frame created, functionality added" />
+    <MESSAGE value="&quot;CheckBalance&quot; frame created, functionality added" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;CheckBalance&quot; frame created, functionality added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

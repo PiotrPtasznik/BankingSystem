@@ -23,7 +23,7 @@ public class Deposit extends JFrame implements ActionListener {
         image.setBounds(0,0,900,800 );
         add(image);
 
-        label1 = new JLabel("ENTER AMOUNT :");
+        label1 = new JLabel("Enter amount :");
         label1.setForeground(Color.white);
         label1.setFont(new Font("Calibri", Font.BOLD, 40));
         label1.setBounds(120,280, 400, 60);
