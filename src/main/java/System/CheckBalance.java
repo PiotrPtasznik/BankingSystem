@@ -37,7 +37,7 @@ class CheckBalance extends JFrame implements ActionListener {
 
         backBtn = new JButton("Back");
         backBtn.setFont(new Font("Calibri", Font.BOLD, 18));
-        backBtn.setBounds(225,400,180,40);
+        backBtn.setBounds(120,400,180,40);
         backBtn.addActionListener(this);
         image.add(backBtn);
 
@@ -60,7 +60,7 @@ class CheckBalance extends JFrame implements ActionListener {
 
         setSize(900, 800);
         setUndecorated(true);
-        setLocation(500, 0);
+        setLocation(900,20);
         setVisible(true);
     }
 

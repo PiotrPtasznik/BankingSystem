@@ -9,7 +9,6 @@ public class Transactions extends JFrame implements ActionListener {
 
     JLabel image, label1;
     JButton deposit, withdraw, balance, statement, transfer, pinChange, exit;
-
     String pinnumber;
 
     Transactions(String pinnumber){
@@ -108,6 +107,10 @@ public class Transactions extends JFrame implements ActionListener {
         if(e.getSource() == pinChange){
             setVisible(false);
             new PinChange(pinnumber).setVisible(true);
+        }
+        if(e.getSource() == statement){
+            setVisible(false);
+            new AccountStatement(pinnumber).setVisible(true);
         }
 
     }
