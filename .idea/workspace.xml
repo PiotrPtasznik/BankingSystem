@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b90b077-6228-45b8-b6c5-28e577989932" name="Changes" comment="&quot;CheckBalance&quot; frame created, functionality added">
-      <change afterPath="$PROJECT_DIR$/src/main/java/System/PinChange.java" afterDir="false" />
+    <list default="true" id="6b90b077-6228-45b8-b6c5-28e577989932" name="Changes" comment="&quot;PinChange&quot; frame created, functionality added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/System/AccountStatement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/System/Deposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Deposit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/System/CheckBalance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/CheckBalance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/System/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/System/PinChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/PinChange.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/System/Transactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/System/Transactions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="update(BankingSystem)_v1.07" />
+        <entry key="$PROJECT_DIR$" value="update(BankingSystem)_v1.08" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -129,7 +131,7 @@
       <module name="BankingSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="System.*" />
+          <option name="PATTERN" value="System.AccountStatement" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -178,7 +180,10 @@
       <workItem from="1693910239239" duration="4650000" />
       <workItem from="1693992070615" duration="625000" />
       <workItem from="1694030486166" duration="3255000" />
-      <workItem from="1694108818077" duration="2617000" />
+      <workItem from="1694108818077" duration="2919000" />
+      <workItem from="1694124989872" duration="5793000" />
+      <workItem from="1694130898269" duration="88000" />
+      <workItem from="1694457814172" duration="378000" />
     </task>
     <task id="LOCAL-00001" summary="Login page with &quot;clear&quot; button functionality">
       <created>1692616835943</created>
@@ -250,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694034575697</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="&quot;PinChange&quot; frame created, functionality added">
+      <created>1694112446878</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1694112446879</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +279,8 @@
     <MESSAGE value="&quot;Deposit&quot; frame created, functionality added" />
     <MESSAGE value="&quot;Withdraw&quot; frame created, functionality added" />
     <MESSAGE value="&quot;CheckBalance&quot; frame created, functionality added" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;CheckBalance&quot; frame created, functionality added" />
+    <MESSAGE value="&quot;PinChange&quot; frame created, functionality added" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;PinChange&quot; frame created, functionality added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

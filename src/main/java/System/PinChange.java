@@ -51,12 +51,16 @@ public class PinChange extends JFrame implements ActionListener {
         image.add(changePinTextField2);
 
         changeBtn = new JButton("Change");
+        changeBtn.setFont(new Font("Calibri", Font.BOLD, 18));
         changeBtn.setBounds(340,400,180,40);
+        changeBtn.setForeground(Color.black);
         changeBtn.addActionListener(this);
         image.add(changeBtn);
 
         backBtn = new JButton("Back");
+        backBtn.setFont(new Font("Calibri", Font.BOLD, 18));
         backBtn.setBounds(120,400,180,40);
+        backBtn.setForeground(Color.black);
         backBtn.addActionListener(this);
         image.add(backBtn);
 
